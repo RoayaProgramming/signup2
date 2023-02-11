@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Courgette&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #e5e5e5;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card{
+    background-color:#ffffff ;
+    width: 360px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    border-radius: 20px;
+}
+h3{
+    color: #47484e;
+    text-align: center;
+    padding-top:20px ;
+}
+form label{
+    display: flex;
+    margin:10px 0;
+    color: #9e9e9e;
+    font-size: 12px;
+}
+form input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #26262bd9;
+}
+.card form input[type="password"]{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.card .container button{
+    position: relative;
+    bottom: 165px;
+    left: 89%;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.card .container button i{
+    font-size: 15px;
+    color: #4f00dc;
+}
+.card form .inputfield {
+    display: flex;
+    align-items: baseline;
+    max-width: 250px;
+}
+.card form .inputfield .check{
+    width: 10px;
+    height: 10px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.card form .inputfield .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.card form .inputfield .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #4f00dc;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+}
+.card form .inputfield .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+}
+.card form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+    background: #4f00dc;
+}
+.card form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+}
+.card form .inputfield p{
+    font-size: 14px;
+    color: #26262bd9;
+    padding-left: 15px;
+    font-size: 13px;
+}
+.card form .inputfield p a{
+    color: #4f00dcbd;
+    
+}
+.card form input[type="submit"]{
+    margin-top: 20px;
+    padding:15px;
+    background-color:#4f00dc ;
+    color: white;
+    box-shadow: 0 13px 11px rgb(0 0 0 / 20%);
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+.card h6{
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+    transform: translateY(-20px);
+}
+.card .container .social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(-12px);
+}
+.card .container .social a{
+    width:25px;
+    padding: 25px;
+    height: 25px;
+    background-color: #eeeeee;
+    border-radius: 25px;
+    position: relative;
+}
+.card .container .social a i{
+    position: absolute;
+    left: 28%;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+.card .container .social a img{
+    position: absolute;
+    top: 15px;
+    left: 16px;
+}
+.card .container .social a i.face{
+    color: #1877f2;
+}
+.card .container .social a i.apple{
+    color: black;
+}
+.card .container .login{
+    text-align: center;
+    padding-top: 15px;
+    transform: translateY(-12px);
+
+}
+.card .container .login a{
+    text-decoration: none;
+}
